@@ -1,0 +1,189 @@
+/* Basic Reset */
+body, h1, h2, h3, h4, p, ul, li, section, article {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+    background-color: #FCE4D6; /* Light Peach */
+    color: #2C3E50; /* Charcoal Black */
+}
+
+/* Header */
+header {
+    background-color: #1ABC9C; /* Turquoise */
+    color: #fff; /* White text */
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+/* Navigation */
+nav {
+    background-color: #FF6347; /* Sunset Orange */
+    color: #fff;
+    padding: 0.75rem 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1.5rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease, padding-bottom 0.3s ease;
+    padding-bottom: 0.25rem;
+}
+
+nav a:hover {
+    color: #FFDD57; /* Bright Yellow */
+    border-bottom: 2px solid #8E44AD; /* Deep Purple */
+    transform: scale(1.05); /* Subtle zoom effect */
+}
+
+/* Sections */
+section {
+    padding: 3rem;
+    margin: 2rem auto;
+    background-color: #FFF3E0; /* Soft Light Peach */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    width: 80%;
+    max-width: 1200px;
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #FF6347; /* Sunset Orange */
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+/* Hero Section */
+#hero {
+    text-align: center;
+}
+
+#hero img {
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 6px rgba(45, 70, 227, 0.15);
+}
+
+/* Resume Section */
+#resume h3 {
+    margin-top: 1.5rem;
+    color: #8E44AD; /* Deep Purple */
+}
+
+#resume article {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-left: 4px solid #1ABC9C; /* Turquoise */
+    background-color: #FFF3E0;
+    border-radius: 5px;
+}
+
+#resume article h4 {
+    font-size: 1.3rem;
+    color: #FF6347; /* Sunset Orange */
+    margin-bottom: 0.5rem;
+}
+
+#resume ul {
+    list-style: disc;
+    margin-left: 2rem;
+}
+
+/* Projects Section */
+#projects article {
+    margin-bottom: 2rem;
+    border: 1px solid #8E44AD; /* Deep Purple */
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+#projects img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #8E44AD;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(86, 3, 188, 0.1);
+}
+
+/* About Me Section */
+#about {
+    text-align: center;
+}
+
+#about img {
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 6px rgba(28, 3, 215, 0.15);
+}
+
+/* Contact Section */
+#contact p {
+    margin-bottom: 0.75rem;
+}
+
+#contact a {
+    color: #1ABC9C; /* Turquoise */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#contact a:hover {
+    color: #FF6347; /* Sunset Orange */
+}
+
+/* Footer */
+footer {
+    background-color: #2C3E50; /* Charcoal Black */
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 0.75rem 0;
+    }
+
+    section {
+        width: 95%;
+        margin: 1rem auto;
+        padding: 2rem;
+    }
+
+    #hero img,
+    #about img {
+        width: 100%;
+        border-radius: 0;
+    }
+}
